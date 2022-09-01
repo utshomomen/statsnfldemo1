@@ -25,9 +25,24 @@ function GridTeams() {
       <WeekBox>
         <Link to='/schedule' className='week-text'>
           <h1>{'Week ' + week}</h1>
+
           <h1>Schedule</h1>
         </Link>
+
+        
+        <Link to='/livepage' className='live-text'>
+       
+          <h1>Live</h1>
+           
+          </Link>
+         
       </WeekBox>
+
+      {/* <liveBox>
+        <Link to='/livepage' className='live-text'>
+       
+        </Link>
+      </liveBox> */}
 
       <Container>
         {teams.map(({ team }) => <>

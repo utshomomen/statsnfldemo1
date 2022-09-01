@@ -45,13 +45,17 @@ export const Container = styled.div`
 
 `;
 
-export const WeekBox = styled.div` 
 
-.week-text {
-  display:flex;
+
+export const liveBox = styled.div` 
+
+.live-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  height: 110px;
+
+  height: 100px;
   padding: 12px;
   background: #013369;
   color: #fff;
@@ -60,4 +64,46 @@ export const WeekBox = styled.div`
   
 
 `;
+
+
+export const WeekBox = styled.div` 
+
+.week-text {
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+
+  justify-content: space-between;
+  flex-flow: row;
+  height: 110px;
+  padding: 12px;
+  background: #013369;
+  color: #fff;
+  text-decoration: none;
+}
+  
+.live-text {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self:center ;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+  padding: 12px;
+  
+margin-top:-108px ;
+
+   
+  background: #013369;
+  color: #fff;
+  text-decoration: none;
+}
+  
+
+
+
+
+`;
+
+
 
