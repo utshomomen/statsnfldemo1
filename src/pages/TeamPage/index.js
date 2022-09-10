@@ -11,6 +11,9 @@ function TeamPage({ match }) {
   const [currentdb, setCurrentdb] = useState({});
 
   useEffect(() => {
+
+
+
     api_espn.get('v2/sports/football/nfl/standings').then(response => {
       let afcTeams = response.data.children[0].standings.entries;
       let nfcTeams = response.data.children[1].standings.entries;
@@ -35,15 +38,42 @@ function TeamPage({ match }) {
 
   //seed 0 win% 3   DR 10   HR 15 AR 16
   return (
+   
     <Container>
       {current.team && currentdb ?
         <>
           <div id='title-page'>
+            
+            
             <h1>{current.team.displayName.toUpperCase()}</h1>
             <h1>{'(' + current.stats[1].value + '-' + current.stats[2].value + '-' + current.stats[5].value + ')'}</h1>
           </div>
 
           <div id='main-page'>
+
+
+
+
+      
+
+         
+    
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div id='win-seed-line'>
               <h2>WIN: {current.stats[3].displayValue}%</h2>
               <h2>SEED: {current.stats[0].displayValue}</h2>
@@ -58,6 +88,10 @@ function TeamPage({ match }) {
               <img src={currentdb.strTeamJersey} alt='team jersey' />
             </div> */}
 
+            
+
+
+            
             {/* <div id='stadium'>
               <h2>{currentdb.strStadium}</h2>
               <img src={currentdb.strStadiumThumb} alt='team stadium' />
